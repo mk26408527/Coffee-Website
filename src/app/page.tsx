@@ -7,25 +7,24 @@ import React from "react";
 export default function HomePage() {
   return (
     <>
-    <main>
+    <main className="fade-up">
       <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 lg:px-32 py-16 md:py-24 bg-gray-700 text-gray-50">
         <div className="flex flex-col items-start">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mb-4">Café <span className="text-yellow-500">Grandeur</span></h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-50 mb-4 fade-in">Café Grandeur</h1>
           <p className="text-lg md:text-xl mb-6">Welcome to Café Grandeur, a cozy and modern café located in the heart of Paris.</p>
           <p className="mb-4">We offer a wide range of coffee beans, from the most delicious to the most robust, and a selection of coffees from around the world.</p>  
           <div className="mt-4">
-            <button className="bg-orange-500 hover:bg-orange-700 text-white font-semibold py-2 px-5 rounded hover:transition ease-out duration-500 transform hover:scale-110">
-              <Link href="/contact">Contact Us</Link>
-            </button>
+          <button className="bg-orange-500 hover:bg-orange-700 text-white font-semibold py-2 px-5 rounded hover:scale-110 transform transition ease-out duration-500">
+  <Link href="/contact">Contact Us</Link>
+</button>
           </div>
         </div>
         <div className="mt-8 md:mt-0 md:ml-10">
-          <img 
-            src="pic.jpeg" 
-            alt="Coffee at Café Grandeur" 
-            loading="lazy"
-            className="w-full max-w-xs md:max-w-sm h-auto rounded-lg shadow-lg"
-          />
+        <img 
+        src="pic.jpeg"
+        alt="Coffee" 
+        className="w-full max-w-xs md:max-w-sm h-auto rounded-lg shadow-lg slide-in" 
+        />
         </div>
       </div>
 
@@ -41,12 +40,12 @@ export default function HomePage() {
       <main>
         <div className="flex flex-col md:flex-row justify-center items-start space-y-8 md:space-y-0 md:space-x-8 p-6">
           <div className="text-center bg-gray-900 p-4 rounded-lg shadow-xl transform transition hover:scale-105 duration-500">
-            <img 
-              src="pic1.jpeg" 
-              alt="Espresso Coffee" 
-              loading="lazy"
-              className="w-40 h-32 rounded-lg shadow-lg mx-auto"
-            />
+          <img 
+          src="pic1.jpeg" 
+          alt="Espresso Coffee" 
+          className="w-40 h-32 rounded-lg shadow-lg mx-auto transform transition hover:rotate-12 duration-500"
+          />
+
             <h3 className="text-2xl font-bold mt-4 text-white">Espresso</h3>
             <p className="text-gray-50 mt-2">A bold espresso captured with splashing coffee drops. Simple yet energetic, highlighting the beauty of the drink in a classic cup.</p>
           </div>
@@ -56,7 +55,7 @@ export default function HomePage() {
               src="pic2.jpeg" 
               alt="Heartfelt Coffee" 
               loading="lazy"
-              className="w-40 h-32 rounded-lg shadow-lg mx-auto"
+              className="w-40 h-32 rounded-lg shadow-lg mx-auto transform transition hover:-rotate-12 duration-500"
             />
             <h3 className="text-2xl font-bold mt-4 text-black">Special Heartfelt Coffee</h3>
             <p className="text-black-900 mt-2">This image brings together the warmth of coffee and love. The heart made of beans and the cranes represent the peaceful bond shared in special coffee moments.</p>
@@ -67,7 +66,7 @@ export default function HomePage() {
               src="pic3.jpeg" 
               alt="Latte Coffee" 
               loading="lazy"
-              className="w-40 h-32 rounded-lg shadow-lg mx-auto"
+              className="w-40 h-32 rounded-lg shadow-lg mx-auto transform transition hover:rotate-12 duration-500"
             />
             <h3 className="text-2xl font-bold mt-4 text-white">Latte</h3>
             <p className="text-gray-50 mt-2">A creamy latte with delicate leaf art. Its smooth texture and beautiful design make this cup of coffee a true work of art.</p>

@@ -4,8 +4,7 @@ import React from "react";
 export default function MenuPage() {
     return (
         <>
-        <main>
-            {/* Hero Section */}
+        <main className="fade-up">
             <main className="relative flex items-center justify-center min-h-screen">
                 <div className="absolute inset-0 bg-black opacity-50"></div>
                 <div className="absolute z-10 text-center top-24 md:top-32 px-4">
@@ -24,7 +23,6 @@ export default function MenuPage() {
                 </div>
             </main>
 
-            {/* Menu Section */}
             <section className="bg-gray-500 py-10 md:py-14">
                 <div className="container mx-auto text-center px-4">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6 md:mb-8 underline text-[#edbd63]">Our Menu</h2>
@@ -32,7 +30,6 @@ export default function MenuPage() {
                         Explore our range of coffees and treats.
                     </p>
 
-                    {/* Menu Grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                         <div className="p-4 md:p-6 shadow-lg rounded-lg bg-white hover:bg-[#f0e4ca] transition duration-300 transform hover:scale-105">
                             <img 
